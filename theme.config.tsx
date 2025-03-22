@@ -7,7 +7,7 @@ function useNextSeoProps() {
   const { asPath } = useRouter();
   const arr = asPath.replace(/[-_]/g, " ").split("/");
   const category = arr[1] && arr[1][0] !== "#" ? arr[1] : "Lion Police RP";
-  const rawTitle = arr[arr.length - 1] || "Home";
+  const rawTitle = arr[arr.length - 1] || "Guide";
   const title =
     /[a-z]/.test(rawTitle) && /[A-Z]/.test(rawTitle) ? rawTitle : "%s";
 
@@ -28,7 +28,7 @@ function useHead() {
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" href="/lion.ico" type="image/x-icon" />{" "}
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />{" "}
       <meta httpEquiv="Content-Language" content="en" />
       <meta name="description" content={description} />
       <meta name="og:title" content={title} />
