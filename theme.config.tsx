@@ -28,7 +28,7 @@ function useHead() {
   return (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="icon" href="lion.ico" type="image/x-icon" />
+      <link rel="icon" href="/lion.ico" type="image/x-icon" />{" "}
       <meta httpEquiv="Content-Language" content="en" />
       <meta name="description" content={description} />
       <meta name="og:title" content={title} />
